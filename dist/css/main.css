@@ -248,7 +248,7 @@ a {
   justify-content: center;
   align-items: center; }
   .modal .exit {
-    position: absolute;
+    position: fixed;
     right: 22px;
     top: 12px;
     font-size: 40px;
