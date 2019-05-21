@@ -238,7 +238,7 @@ a {
       background: url(/dist/img/item1.PNG) no-repeat center center/cover;
       background-color: #1D3557; }
 
-.bg-modal {
+.modal {
   width: 100%;
   height: 100vh;
   background: rgba(1, 35, 57, 0.7);
@@ -247,27 +247,29 @@ a {
   display: none;
   justify-content: center;
   align-items: center; }
-  .bg-modal .modal-content {
-    width: 700px;
-    background: #F2FFF2;
-    border-radius: 10px;
-    padding: 1rem;
-    position: relative; }
-    .bg-modal .modal-content img {
-      width: 100%;
-      border-radius: 10px; }
-    .bg-modal .modal-content h3 {
-      padding: 0.2rem 0.2rem; }
-    .bg-modal .modal-content p {
-      padding: 0rem 0.2rem; }
-    .bg-modal .modal-content .exit {
-      position: absolute;
-      right: 22px;
-      top: 12px;
-      font-size: 40px;
-      transform: rotate(45deg);
-      color: white;
-      padding: 0rem 0rem;
-      text-align: center; }
-      .bg-modal .modal-content .exit:hover {
-        cursor: pointer; }
+  .modal .exit {
+    position: absolute;
+    right: 22px;
+    top: 12px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    color: white;
+    padding: 0rem 0rem;
+    text-align: center; }
+    .modal .exit:hover {
+      cursor: pointer; }
+  .modal .bg-modal {
+    display: none; }
+    .modal .bg-modal .modal-content {
+      width: 700px;
+      background: #F2FFF2;
+      border-radius: 10px;
+      padding: 1rem;
+      position: relative; }
+      .modal .bg-modal .modal-content img {
+        width: 100%;
+        border-radius: 10px; }
+      .modal .bg-modal .modal-content h3 {
+        padding: 0.2rem 0.2rem; }
+      .modal .bg-modal .modal-content p {
+        padding: 0rem 0.2rem; }
