@@ -1,0 +1,312 @@
+@import 'variables';
+@import 'utilities';
+
+// General style
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#home{
+    color:$light-color-2;
+    
+    &-bg{
+        background: url(/dist/img/Home.jpg) no-repeat center center/cover;
+        background-color: #99aaaa;
+        background-blend-mode: hard-light;
+        height: 100vh;
+        opacity: 1;
+    }
+    .container-1{
+
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 1rem;
+            padding-bottom:1rem; 
+            img{
+                width: 80px;
+                opacity: 1;
+            }
+    
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    padding: 0rem 1.2rem;
+                    a{
+                        border-bottom: 2px transparent solid;
+                        padding: 0.2rem 0.3rem;
+                        transition: 0.3s;
+                        &:hover{
+                            border-bottom-color: $light-color;
+                            transition: 0.3s;
+                        }
+                    }
+    
+                }
+            }
+        }  
+        
+        #home-content{
+            display: flex;
+            flex-flow: column;
+            color: $dark-color;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+            p{
+                color: $dark-color;
+                font-weight: bold;
+                // font-size: 16px;
+                padding: 0.5rem 0;
+            }
+
+            a{
+                background-color: $dark-color;
+                border-radius: 5px;
+                transition: 0.4s;
+
+                &:hover{
+                    background-color: $main-color; 
+                    transition: 0.4s; 
+                }
+            }
+        }
+    }
+}
+
+#profile{
+    height: 100vh;
+    #p-box-1{
+        display: flex;
+        padding: 2rem 0;
+        margin: 2rem auto 1 rem auto;
+        
+        #profile-image{
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                padding: 1rem 1rem;
+                
+            }
+            border-right: 2px solid;
+            border-right-color: $dark-color;
+        }
+        
+        #profile-content{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0 2rem;
+            color: $dark-color;
+        }
+    }
+
+    #p-box-2{
+        // background: $main-color;
+        h2{
+            padding-bottom: 0.2px;
+        }
+
+        #skill{
+            display: flex;
+
+            #skill-1{
+                flex: 1;
+                .s-item{
+
+                    #html{
+                        overflow: hidden;
+                        div{
+                            width: 100%;
+                        }
+                    }
+
+                    #css{
+                        overflow: hidden;
+                        div{
+                            width: 90%;
+                        }
+                    }
+
+                    #js{
+                        overflow: hidden;
+                        div{
+                            width: 75%;
+                        }
+                    }
+
+                    #python{
+                        overflow: hidden;
+                        div{
+                            width:  80%;
+                        }
+                    }
+
+                    #ps {
+                        overflow: hidden;
+                        div{
+                            width: 50%;
+                        }
+                    }
+
+                    #is{
+                        overflow: hidden;
+                        div{
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+
+            #skill-2{
+                flex: 1;
+                .s-item{
+
+                    #c{
+                        overflow: hidden;
+                        div{
+                            width: 95%;
+                        }
+                    }
+
+                    #arduino{
+                        overflow: hidden;
+                        div{
+                            width: 85%;
+                        }
+                    }
+
+                    #lts{
+                        overflow: hidden;
+                        div{
+                            width: 45%;
+                        }
+                    }
+
+                    #kicad{
+                        overflow: hidden;
+                        div{
+                            width:  80%;
+                        }
+                    }
+
+                    #vhdl {
+                        overflow: hidden;
+                        div{
+                            width: 70%;
+                        }
+                    }
+
+                    #matlab{
+                        overflow: hidden;
+                        div{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#work{
+    height: 100vh;
+    position: relative;
+    .container-2{
+        .items{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem 0.5rem; 
+            .w-item{
+                display: block; 
+                height: 150px;
+                width: 300px;
+                background-blend-mode: hard-light;
+                border-radius: 10px;
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                    background-color: #333;
+                    background-blend-mode: normal;
+                    cursor: pointer;
+                    .bg-img{
+                        div{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            #w-item1{
+                background: url(/dist/img/item4.PNG) no-repeat center center/cover;
+                background-color: $dark-color;
+            }
+
+            #w-item2{
+                background: url(/dist/img/item3.PNG) no-repeat center center/cover;
+                background-color: $dark-color;
+            }
+
+            #w-item3{
+                background: url(/dist/img/item2.PNG) no-repeat center center/cover;
+                background-color: $dark-color;
+            }
+
+            #w-item4{
+                background: url(/dist/img/item1.PNG) no-repeat center center/cover;
+                background-color: $dark-color;
+            }
+        }
+    }
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(1D, 35, 57, 0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    
+    .modal-content{
+        width: 700px;
+        background: $light-color-2;
+        border-radius: 10px;
+        padding: 1rem;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        h3{
+            padding: 0.2rem 0.2rem;
+        }
+        p{
+            padding: 0rem 0.2rem;
+        }
+        
+        .exit{
+            position:absolute; 
+            right: 22px;
+            top: 12px;
+            font-size: 40px;
+            transform: rotate(45deg);
+            color: white;
+            padding: 0rem 0rem;
+            text-align: center;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

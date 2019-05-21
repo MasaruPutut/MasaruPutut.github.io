@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#top-menu{
+    background-color: slategray;
+    color: whitesmoke;
+    padding: 10px;
+    float: inline-start;
+    
+}
+
+#top-menu-nav li{
+    display : inline-block;
+    padding: 2px;
+    color: whitesmoke;
+}

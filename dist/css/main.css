@@ -1,0 +1,273 @@
+.container-1 {
+  max-width: 1280px;
+  padding: 1rem 1rem;
+  margin: auto; }
+
+.container-2 {
+  max-width: 1000px;
+  padding: 1rem 1rem;
+  margin: auto; }
+
+.bg-dark {
+  background: #1D3557;
+  color: #F2FFF2; }
+
+h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 3.7rem;
+  padding: 0.5rem 1rem; }
+
+h2 {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: lighter; }
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+  font-weight: lighter; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem; }
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  color: #F2FFF2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem; }
+
+.current {
+  border-bottom-color: #A8DADC; }
+
+.line-break {
+  background: #457B9D;
+  height: 1px;
+  margin: 0.2rem 0; }
+
+.s-item {
+  display: flex; }
+  .s-item p {
+    flex: 1; }
+  .s-item .s-bar {
+    flex: 6;
+    background: #F2FFF2;
+    font-size: 0.9rem;
+    margin: 0.25rem 1rem;
+    margin-right: 3rem;
+    border-radius: 5px; }
+    .s-item .s-bar-fill {
+      height: 100%;
+      background: #457B9D; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+#home {
+  color: #F2FFF2; }
+  #home-bg {
+    background: url(/dist/img/Home.jpg) no-repeat center center/cover;
+    background-color: #99aaaa;
+    background-blend-mode: hard-light;
+    height: 100vh;
+    opacity: 1; }
+  #home .container-1 #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem; }
+    #home .container-1 #navbar img {
+      width: 80px;
+      opacity: 1; }
+    #home .container-1 #navbar ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #home .container-1 #navbar ul li {
+        padding: 0rem 1.2rem; }
+        #home .container-1 #navbar ul li a {
+          border-bottom: 2px transparent solid;
+          padding: 0.2rem 0.3rem;
+          transition: 0.3s; }
+          #home .container-1 #navbar ul li a:hover {
+            border-bottom-color: #A8DADC;
+            transition: 0.3s; }
+  #home .container-1 #home-content {
+    display: flex;
+    flex-flow: column;
+    color: #1D3557;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center; }
+    #home .container-1 #home-content p {
+      color: #1D3557;
+      font-weight: bold;
+      padding: 0.5rem 0; }
+    #home .container-1 #home-content a {
+      background-color: #1D3557;
+      border-radius: 5px;
+      transition: 0.4s; }
+      #home .container-1 #home-content a:hover {
+        background-color: #457B9D;
+        transition: 0.4s; }
+
+#profile {
+  height: 100vh; }
+  #profile #p-box-1 {
+    display: flex;
+    padding: 2rem 0;
+    margin: 2rem auto 1 rem auto; }
+    #profile #p-box-1 #profile-image {
+      border-right: 2px solid;
+      border-right-color: #1D3557; }
+      #profile #p-box-1 #profile-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 1rem 1rem; }
+    #profile #p-box-1 #profile-content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 0 2rem;
+      color: #1D3557; }
+  #profile #p-box-2 h2 {
+    padding-bottom: 0.2px; }
+  #profile #p-box-2 #skill {
+    display: flex; }
+    #profile #p-box-2 #skill #skill-1 {
+      flex: 1; }
+      #profile #p-box-2 #skill #skill-1 .s-item #html {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #html div {
+          width: 100%; }
+      #profile #p-box-2 #skill #skill-1 .s-item #css {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #css div {
+          width: 90%; }
+      #profile #p-box-2 #skill #skill-1 .s-item #js {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #js div {
+          width: 75%; }
+      #profile #p-box-2 #skill #skill-1 .s-item #python {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #python div {
+          width: 80%; }
+      #profile #p-box-2 #skill #skill-1 .s-item #ps {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #ps div {
+          width: 50%; }
+      #profile #p-box-2 #skill #skill-1 .s-item #is {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-1 .s-item #is div {
+          width: 85%; }
+    #profile #p-box-2 #skill #skill-2 {
+      flex: 1; }
+      #profile #p-box-2 #skill #skill-2 .s-item #c {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #c div {
+          width: 95%; }
+      #profile #p-box-2 #skill #skill-2 .s-item #arduino {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #arduino div {
+          width: 85%; }
+      #profile #p-box-2 #skill #skill-2 .s-item #lts {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #lts div {
+          width: 45%; }
+      #profile #p-box-2 #skill #skill-2 .s-item #kicad {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #kicad div {
+          width: 80%; }
+      #profile #p-box-2 #skill #skill-2 .s-item #vhdl {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #vhdl div {
+          width: 70%; }
+      #profile #p-box-2 #skill #skill-2 .s-item #matlab {
+        overflow: hidden; }
+        #profile #p-box-2 #skill #skill-2 .s-item #matlab div {
+          width: 70%; }
+
+#work {
+  height: 100vh;
+  position: relative; }
+  #work .container-2 .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 0.5rem; }
+    #work .container-2 .items .w-item {
+      display: block;
+      height: 150px;
+      width: 300px;
+      background-blend-mode: hard-light;
+      border-radius: 10px; }
+      #work .container-2 .items .w-item:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+        background-color: #333;
+        background-blend-mode: normal;
+        cursor: pointer; }
+        #work .container-2 .items .w-item:hover .bg-img div {
+          display: block; }
+    #work .container-2 .items #w-item1 {
+      background: url(/dist/img/item4.PNG) no-repeat center center/cover;
+      background-color: #1D3557; }
+    #work .container-2 .items #w-item2 {
+      background: url(/dist/img/item3.PNG) no-repeat center center/cover;
+      background-color: #1D3557; }
+    #work .container-2 .items #w-item3 {
+      background: url(/dist/img/item2.PNG) no-repeat center center/cover;
+      background-color: #1D3557; }
+    #work .container-2 .items #w-item4 {
+      background: url(/dist/img/item1.PNG) no-repeat center center/cover;
+      background-color: #1D3557; }
+
+.bg-modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(1, 35, 57, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  .bg-modal .modal-content {
+    width: 700px;
+    background: #F2FFF2;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative; }
+    .bg-modal .modal-content img {
+      width: 100%;
+      border-radius: 10px; }
+    .bg-modal .modal-content h3 {
+      padding: 0.2rem 0.2rem; }
+    .bg-modal .modal-content p {
+      padding: 0rem 0.2rem; }
+    .bg-modal .modal-content .exit {
+      position: absolute;
+      right: 22px;
+      top: 12px;
+      font-size: 40px;
+      transform: rotate(45deg);
+      color: white;
+      padding: 0rem 0rem;
+      text-align: center; }
+      .bg-modal .modal-content .exit:hover {
+        cursor: pointer; }

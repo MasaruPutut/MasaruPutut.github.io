@@ -1,0 +1,40 @@
+<div id="skill-1">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Adobe PS</li>
+                            <li>InkScape</li>
+                        </ul>
+                    </div>
+                    <div id="skill-1-bar">
+                        <ul>
+                            <li id="html"></li>
+                            <li id="css"></li>
+                            <li id="js"></li>
+                            <li id="python"></li>
+                            <li id="ps"></li>
+                            <li id="is"></li>
+                        </ul>
+                    </div>
+                    <div id="skill-2"> 
+                        <ul>
+                            <li>C/C++</li>
+                            <li>Arduino</li>
+                            <li>LTSpice</li>
+                            <li>KiCad/Eagle</li>
+                            <li>Verilog/VHDL</li>
+                            <li>MATLAB</li>
+                        </ul>
+                    </div>
+                    <div id="skill-2-bar">
+                        <ul>
+                            <li id="c"></li>
+                            <li id="arduino"></li>
+                            <li id="lts"></li>
+                            <li id="kicad"></li>
+                            <li id="vhdl"></li>
+                            <li id="matlab"></li>
+                        </ul>
+                    </div>
