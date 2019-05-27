@@ -9,210 +9,228 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header id="home">
-        <div id="home-bg">
+    <div class="main-container">
+
+        <header id="home">
+            <div id="home-bg">
+                <div class="container-1">
+                    <nav id="navbar">
+                        <img id="logo" src="/dist/img/logo.png" alt="logo">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#profile">About</a></li>
+                            <li><a href="#work">Journal</a></li>
+                        </ul>
+                    </nav>
+                    <div id="home-content">
+                        <h1>Life is an Adventure</h1>
+                        <p>  Never give up to catch yout dream!  <br>
+                        Keep failing, trying, learning and praying. then you will find an unpredictable things in your life insyaAllah</p>
+                        <a class="btn" href="#profile">Start The Adventure</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <section id="profile" class="bg-dark">
+            <div class="bg-light">
+                <div id="p-box-1" class="container-2">
+                    <div id="profile-image">
+                        <img src="/dist/img/profile.png" alt="">
+                    </div>
+                    
+                    <div class="grid-item2" id="profile-content">
+                        <h2>Profile</h2>
+                        <p id="name">Putut Dewantoro - 02 Desember 1996</p>
+                        <p>I'm an electrical/electronic engineer graduated from Institut Teknologi Bandung, Indonesia. I love to learn about digital electronics, programming and design. I have interest in neuromorphic computing. My dream is to make a chip/processor that can compute like human brain. I likes to learn new things to improve my skill. I'm a little shy to meet new friends but can adapt well. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark">
+                <div id="p-box-2" class="container-1">
+                    <h2>Skill</h2>
+                    <div class="line-break"></div>
+                    <div id="skill">
+                        <div id="skill-1">
+                            <div id="s1-item-1" class="s-item">
+                                <p>HTML</p>
+                                <div id="html" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s1-item-2" class="s-item">
+                                <p>CSS</p>
+                                <div id="css" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s1-item-3" class="s-item">
+                                <p>Java Script</p>
+                                <div id="js" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s1-item-4" class="s-item">
+                                <p>Python</p>
+                                <div id="python" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s1-item-5" class="s-item">
+                                <p>Adobe PS</p>
+                                <div id="ps" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s1-item-6" class="s-item">
+                                <p>Ink Scape</p>
+                                <div id="is" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="skill-2">
+                            <div id="s2-item-1" class="s-item">
+                                <p>C/C++</p>
+                                <div id="c" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s2-item-2" class="s-item">
+                                <p>Arduino</p>
+                                <div id="arduino" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s2-item-3" class="s-item">
+                                <p>LT Spice</p>
+                                <div id="lts" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s2-item-4" class="s-item">
+                                <p>KiCad</p>
+                                <div id="kicad" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s2-item-5" class="s-item">
+                                <p>verilog/vhdl</p>
+                                <div id="vhdl" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div id="s2-item-6" class="s-item">
+                                <p>MATLAB</p>
+                                <div id="matlab" class="s-bar">
+                                    <div class="s-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box container-2">
+                <!-- <p id="default"> Point the cursor to the skill bar!</p> -->
+                <p id="html-des" class="description"> <b>Description :</b> <br> Advanced in HTML. Making list, table, form, link, and knowing semantic markup </p>
+                <p id="css-des" class="description"> <b>Description :</b> <br> Advanced in CSS. Making template and convert from UI design to HTML and CSS code. master fundamental of CSS, flex-box and grid. Can work with SASS but still lack of making animation.  </p>
+                <p id="js-des" class="description"> <b>Description :</b> <br> Mid-level in Javascript. Understand the fundamental of Javascript, Document Object Model, OOP, and API. now learning Ajax and React JS.   </p>
+                <p id="python-des" class="description"> <b>Description :</b> <br> Mid-level in pyton. often use this for machine learning in my studies. understand fundamental of python, numpy, matplotlib, scikit-learn and pandas. now learning pytorch and tensorflow libraries.</p>
+                <p id="ps-des" class="description"> <b>Description :</b> <br>Junior level in Adobe Photoshop. Editing and resizing photos. since it's pay to use I seldom use this if not urgently needed.  </p>
+                <p id="is-des" class="description"> <b>Description :</b> <br> Mid-level in Inkscape. often make poster for events in organization. understand fundamental of design. </p>
+                <p id="c-des" class="description"> <b>Description :</b> <br> Advanced in C. often use this for develop embedded system using microcontroller. understand fundamentals of C, timer, interrupt UART, I2C and other communication protocol. </p>
+                <p id="arduino-des" class="description"> <b>Description :</b> <br> Advanced in Arduino. often use this to develop embedded systems and IOT devices. understand fundamentals of Arduino(C) experienced in using sensor and wireless communication like bluetooth and wifi.</p>
+                <p id="lts-des" class="description"> <b>Description :</b> <br> Junior level in LT-Spice. I often use this in my 2nd year in university. But I seldom use this anymore so, I think I can advanced it when I study again in this software.</p>
+                <p id="kicad-des" class="description"> <b>Description :</b> <br> Advanced in KiCad. often use this to make PCB. understand tools in kicad. Making , PCB or footprint for IC and adjust width of track. still lack to make PCB for microwave signal.</p>
+                <p id="vhdl-des" class="description"> <b>Description :</b> <br> Mid-level in Verilog/VHDL. Understand fundamental of verilog, paralel and serial architecture. can make MIPS architecture. have making neural network architecture in FPGA useing Verilog. now learning to make deep learning architecture in verilog.</p>
+                <p id="matlab-des" class="description"> <b>Description :</b> <br> Mid-Level in MATLAB. Understand fundamental of MATLAB, matrix operation, image processing, but still learning to use MATLAB because of it's vast usability.</p>
+            </div>
+        </section>
+    
+        <section id="work">
             <div class="container-1">
-                <nav id="navbar">
-                    <img id="logo" src="/dist/img/logo.png" alt="logo">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#profile">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                    </ul>
-                </nav>
-                <div id="home-content">
-                    <h1>Life is an Adventure</h1>
-                    <p>  Never give up to catch yout dream!  <br>
-                    Keep failing, trying, learning and praying. then you will find an unpredictable things in your life insyaAllah</p>
-                    <a class="btn" href="#profile">Start The Adventure</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="profile">
-        <div class="bg-light">
-            <div id="p-box-1" class="container-2">
-                <div id="profile-image">
-                    <img src="/dist/img/profile.png" alt="">
-                </div>
-                
-                <div class="grid-item2" id="profile-content">
-                    <h2>Profile</h2>
-                    <p id="name">Putut Dewantoro - 02 Desember 1996</p>
-                    <p>I'm an electrical/electronic engineer graduated from Institut Teknologi Bandung, Indonesia. I love to learn about digital electronics, programming and design. I have interest in neuromorphic computing. My dream is to make a chip/processor that can compute like human brain. I likes to learn new things to improve my skill. I'm a little shy to meet new friends but can adapt well. </p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-dark">
-            <div id="p-box-2" class="container-1">
-                <h2>Skill</h2>
+                <h2>My Project</h2>
                 <div class="line-break"></div>
-                <div id="skill">
-                    <div id="skill-1">
-                        <div id="s1-item-1" class="s-item">
-                            <p>HTML</p>
-                            <div id="html" class="s-bar">
-                                <div class="s-bar-fill"></div>
+                <div class="container-2">
+                    <h3>Web Development</h3>
+                    <div class="items">
+                        <div class="w-item" id="w-item1">
+                            <div class="bg-img">
+                                <img src="/dist/img/item4.PNG" alt="">
                             </div>
                         </div>
-                        <div id="s1-item-2" class="s-item">
-                            <p>CSS</p>
-                            <div id="css" class="s-bar">
-                                <div class="s-bar-fill"></div>
+                        
+                        <div class="w-item" id="w-item2">
+                            <div class="bg-img">
+                                <img src="/dist/img/item3.PNG" alt="">
                             </div>
                         </div>
-                        <div id="s1-item-3" class="s-item">
-                            <p>Java Script</p>
-                            <div id="js" class="s-bar">
-                                <div class="s-bar-fill"></div>
+                        
+                        <div class="w-item" id="w-item3">
+                            <div class="bg-img">
+                                <img src="/dist/img/item2.PNG" alt="">
                             </div>
-                        </div>
-                        <div id="s1-item-4" class="s-item">
-                            <p>Python</p>
-                            <div id="python" class="s-bar">
-                                <div class="s-bar-fill"></div>
+                        </div>    
+    
+                        <div class="w-item" id="w-item4">
+                            <div class="bg-img">
+                                <img src="/dist/img/item1.PNG" alt="">
                             </div>
-                        </div>
-                        <div id="s1-item-5" class="s-item">
-                            <p>Adobe PS</p>
-                            <div id="ps" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s1-item-6" class="s-item">
-                            <p>Ink Scape</p>
-                            <div id="is" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
+                        </div>    
                     </div>
-                    
-                    <div id="skill-2">
-                        <div id="s2-item-1" class="s-item">
-                            <p>C/C++</p>
-                            <div id="c" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s2-item-2" class="s-item">
-                            <p>Arduino</p>
-                            <div id="arduino" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s2-item-3" class="s-item">
-                            <p>LT Spice</p>
-                            <div id="lts" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s2-item-4" class="s-item">
-                            <p>KiCad</p>
-                            <div id="kicad" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s2-item-5" class="s-item">
-                            <p>verilog/vhdl</p>
-                            <div id="vhdl" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
-                        <div id="s2-item-6" class="s-item">
-                            <p>MATLAB</p>
-                            <div id="matlab" class="s-bar">
-                                <div class="s-bar-fill"></div>
-                            </div>
-                        </div>
+    
+                    <h3>Machine Learning</h3>
+                </div>   
+            </div>
+    
+        </section>
+    
+            <!-- modal section -->
+        <div class="modal">
+            <p class="exit">+</p>
+            <div id="modal-item-1" class="bg-modal">
+                <div class="modal-content">
+                    <div>
+                        <img src="/dist/img/item4.PNG" alt="Portofio">
                     </div>
+                    <h3>Portofolio</h3>
+                    <p>It's a project that I made after I learn HTML, CSS and Javascript. A real website of mine that I make using HTML, CSS and Javascript. Using git as a repository of static website. In this project I use Sass for pre-precessed CSS and learn java script DOM and a little animation. I will always update my studies, works, and projects in this portofolio</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="work">
-        <div class="container-1">
-            <h2>My Project</h2>
-            <div class="line-break"></div>
-            <div class="container-2">
-                <h3>Web Development</h3>
-                <div class="items">
-                    <div class="w-item" id="w-item1">
-                        <div class="bg-img">
-                            <!-- <img src="/dist/img/item4.PNG" alt=""> -->
-                        </div>
+                
+            <div id="modal-item-2" class="bg-modal">
+                <div class="modal-content">
+                    <div>
+                        <img src="/dist/img/item3.PNG" alt="Portofio">
                     </div>
-                    
-                    <div class="w-item" id="w-item2">
-                        <div class="bg-img">
-                            <!-- <img src="/dist/img/item4.PNG" alt=""> -->
-                        </div>
+                    <h3>EdgeLedger</h3>
+                    <p>Dummy Website that I make to learn CSS flexbox, responsive design, landing page, smooth-scroll animation, forms, and API from google maps</p>
+                </div>
+            </div>
+                
+            <div id="modal-item-3" class="bg-modal">
+                <div class="modal-content">
+                    <div>
+                        <img src="/dist/img/item2.PNG" alt="Portofio">
                     </div>
-                    
-                    <div class="w-item" id="w-item3">
-                        <div class="bg-img">
-                            <!-- <img src="/dist/img/item4.PNG" alt=""> -->
-                        </div>
-                    </div>    
-
-                    <div class="w-item" id="w-item4">
-                        <div class="bg-img">
-                            <!-- <img src="/dist/img/item4.PNG" alt=""> -->
-                        </div>
-                    </div>    
+                    <h3>Hotel-web</h3>
+                    <p>Dummy Website that I make to learn fundamental of CSS, form, and making website template using float</p>
                 </div>
-
-                <h3>Machine Learning</h3>
-            </div>   
-        </div>
-
-    </section>
-
-        <!-- modal section -->
-    <div class="modal">
-        <p class="exit">+</p>
-        <div id="modal-item-1" class="bg-modal">
-            <div class="modal-content">
-                <div>
-                    <img src="/dist/img/item4.PNG" alt="Portofio">
+            </div>
+                
+            <div id="modal-item-4" class="bg-modal">
+                <div class="modal-content">
+                    <div>
+                        <img src="/dist/img/item1.PNG" alt="Portofio">
+                    </div>
+                    <h3>Sign-up page</h3>
+                    <p>A mini project to make sign-up form using HTML and CSS</p>
                 </div>
-                <h3>Portofolio</h3>
-                <p>It's a project after I learn HTML, CSS and Javascript. In this project I learn and use many things like felx-box, grid and animation in CSS and also DOM, animation, scroll, modal in Javascript</p>
             </div>
         </div>
             
-        <div id="modal-item-2" class="bg-modal">
-            <div class="modal-content">
-                <div>
-                    <img src="/dist/img/item3.PNG" alt="Portofio">
-                </div>
-                <h3>Portofolio</h3>
-                <p>It's a project after I learn HTML, CSS and Javascript. In this project I learn and use many things like felx-box, grid and animation in CSS and also DOM, animation, scroll, modal in Javascript</p>
-            </div>
-        </div>
-            
-        <div id="modal-item-3" class="bg-modal">
-            <div class="modal-content">
-                <div>
-                    <img src="/dist/img/item2.PNG" alt="Portofio">
-                </div>
-                <h3>Portofolio</h3>
-                <p>It's a project after I learn HTML, CSS and Javascript. In this project I learn and use many things like felx-box, grid and animation in CSS and also DOM, animation, scroll, modal in Javascript</p>
-            </div>
-        </div>
-            
-        <div id="modal-item-4" class="bg-modal">
-            <div class="modal-content">
-                <div>
-                    <img src="/dist/img/item1.PNG" alt="Portofio">
-                </div>
-                <h3>Portofolio</h3>
-                <p>It's a project after I learn HTML, CSS and Javascript. In this project I learn and use many things like felx-box, grid and animation in CSS and also DOM, animation, scroll, modal in Javascript</p>
-            </div>
-        </div>
     </div>
-        
 
 </body>
 

@@ -10,13 +10,14 @@
 
 #home{
     color:$light-color-2;
-    
+    height: 100vh;
+
     &-bg{
         background: url(/dist/img/Home.jpg) no-repeat center center/cover;
         background-color: #99aaaa;
         background-blend-mode: hard-light;
-        height: 100vh;
         opacity: 1;
+        height: 100vh;
     }
     .container-1{
 
@@ -81,20 +82,24 @@
 }
 
 #profile{
-    height: 100vh;
+    // height: 100vh;
+    padding: 2rem 0rem;
     #p-box-1{
         display: flex;
-        padding: 2rem 0;
-        margin: 2rem auto 1 rem auto;
+        padding: 0.2rem 0;
+        margin: 0.5rem auto 1 rem auto;
+        background: white;
+        border-radius: 10px;
+        align-items: center;
         
         #profile-image{
             img{
-                width: 200px;
-                height: 200px;
+                width: 180px;
+                height: 180px;
                 border-radius: 50%;
-                padding: 1rem 1rem;
-                
+                padding: 1rem 1rem;                
             }
+            margin: 0.3rem 0rem;
             border-right: 2px solid;
             border-right-color: $dark-color;
         }
@@ -103,7 +108,7 @@
             display: flex;
             flex-flow: column;
             justify-content: center;
-            padding: 0 2rem;
+            padding: 0.5rem 2rem;
             color: $dark-color;
 
             #name{
@@ -115,7 +120,16 @@
     #p-box-2{
         // background: $main-color;
         h2{
-            padding-bottom: 0.2px;
+            padding-bottom: 0.2rem;
+        }
+        .line-break{
+            background: $light-color-2;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            &:hover{
+                cursor: default;
+            }
         }
 
         #skill{
@@ -124,6 +138,7 @@
             #skill-1{
                 flex: 1;
                 .s-item{
+                 
 
                     #html{
                         overflow: hidden;
@@ -218,53 +233,54 @@
             }
         }
     }
+
+    .description-box{
+        // border: 2px solid red;
+        min-height: 75px;
+        padding:  0.2rem;
+        margin: 0rem auto;
+        border: 0.5px solid $light-color;
+        border-radius: 5px;
+        display: block;
+
+        // #default{
+        //     display: block;
+        // }
+
+        .description{
+            display: none;
+        }
+    }
 }
 
 #work{
-    height: 100vh;
+    // height: 100vh;
     position: relative;
     .container-2{
         .items{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
             grid-gap: 1rem 0.5rem; 
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
             .w-item{
                 display: block; 
-                height: 150px;
-                width: 300px;
-                background-blend-mode: hard-light;
                 border-radius: 10px;
+                .bg-img{
+                    display: block;
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
                 &:hover{
                     transition: 0.5s;
                     transform: scale(1.1);
-                    background-color: #333;
+                    // background-color: #333;
                     background-blend-mode: normal;
                     cursor: pointer;
-                    .bg-img{
-                        div{
-                            display: block;
-                        }
-                    }
                 }
-            }
-            #w-item1{
-                background: url(/dist/img/item4.PNG) no-repeat center center/cover;
-                background-color: $dark-color;
-            }
-
-            #w-item2{
-                background: url(/dist/img/item3.PNG) no-repeat center center/cover;
-                background-color: $dark-color;
-            }
-
-            #w-item3{
-                background: url(/dist/img/item2.PNG) no-repeat center center/cover;
-                background-color: $dark-color;
-            }
-
-            #w-item4{
-                background: url(/dist/img/item1.PNG) no-repeat center center/cover;
-                background-color: $dark-color;
             }
         }
     }
@@ -299,10 +315,11 @@
     .bg-modal{    
         display: none;
         .modal-content{
-            width: 700px;
+            max-width: 700px;
             background: $light-color-2;
             border-radius: 10px;
             padding: 1rem;
+            margin : 0 2rem;
             position: relative;
             img{
                 width: 100%;
@@ -316,6 +333,67 @@
             }
             
 
+        }
+    }
+}
+
+@media (max-width:640px){
+    h1{
+        font-size: 3rem;
+    }
+    #p-box-1{
+        flex-flow: column;
+        #profile-image{
+            border: none !important;
+            padding: 0 !important;
+            img{
+                padding: 0 !important;
+            }
+        }
+
+        #profile-content{
+            h2{
+                padding: 0 1rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1070px){
+    .description-box{
+        // border: 2px solid red;
+        min-height: 75px;
+        padding:  0.2rem;
+        margin: 0rem 2rem !important;
+        border: 0.5px solid $light-color;
+        border-radius: 5px;
+        display: block;
+        
+    }
+
+    #p-box-1 {
+        margin: 0.5rem 2rem 2rem 2rem !important;
+    }
+
+}
+
+
+
+@media (max-width: 710px){
+    #skill{
+        flex-flow: column;
+        #skill-2{
+            #s2-item-1{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-height: 445px){
+    #home{
+        h1{
+            font-size: 40px;
         }
     }
 }

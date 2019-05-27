@@ -1,7 +1,20 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 .container-1{
     max-width: 1280px;
     padding: 1rem 1rem;
     margin: auto;
+
 }
 
 .container-2{
@@ -13,6 +26,16 @@
 .bg-dark{
     background: $dark-color;
     color: $light-color-2;
+}
+
+.bg-ligt{
+    background: $light-color-2;
+    color: $dark-color;
+}
+
+.description-box{
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
 }
 
 h1{
@@ -38,6 +61,7 @@ h3{
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
+    line-height: 1.3rem;
     padding: 0.25rem 1rem;
 }
 
@@ -72,20 +96,96 @@ a{
 
 .s-item{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark-color;
+    color: $light-color-2;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 0.5px solid $light-color;
+    &:hover{
+        // cursor: pointer;
+        background-color: $light-color;
+        color:$dark-color; 
+        font-weight: bold;
+        transition: 0.4s; 
+    }
     p{
-        flex: 1;
+        flex: 2;
     }
     .s-bar{
-        flex: 6;
+        flex: 8;
         background: $light-color-2;
         font-size: 0.9rem;
         margin: 0.25rem 1rem;
         margin-right: 3rem;
         border-radius: 5px;
+        height: 1.2rem;
 
         &-fill{
             height: 100%;
             background: $main-color;
+            border-radius: 5px;
         }
     }
 }
+
+@media only screen and (max-width: 998px){
+    .s-item{
+        p{
+            flex:3;
+        }
+        .s-bar{
+            flex: 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 903px){
+    .s-item{
+        p{
+            flex:4;
+        }
+        .s-bar{
+            flex: 9;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .s-item{
+        p{
+            flex:5;
+        }
+        .s-bar{
+            flex: 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .s-item{
+        p{
+            flex:4;
+        }
+        .s-bar{
+            flex: 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .s-item{
+        p{
+            flex:4;
+        }
+        .s-bar{
+            flex: 6;
+        }
+    }
+}
+
+
+
+
+
